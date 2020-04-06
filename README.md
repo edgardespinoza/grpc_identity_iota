@@ -1,5 +1,11 @@
-gcloud compute ssh
+gcloud compute ssh instance-identity
 
+protoc \
+    --include_imports \
+    --include_source_info \
+    protos/helloworld.proto \
+    --descriptor_set_out api.pb
+    
 gcloud docker -- push gcr.io/grpctest1/endpoints-example:1.0
 
 node client.js -h  35.196.167.206:50051 -k AIzaSyBwWblozlwOvKsngh3y_Fa9IR9XaZyl6JY

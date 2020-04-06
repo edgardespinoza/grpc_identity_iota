@@ -26,7 +26,7 @@ config_version: 3
 #
 # Name of the service configuration.
 #
-name: hellogrpc1.endpoints.grpctest1.cloud.goog
+name: identity.endpoints.identitygrpc.cloud.goog
 
 #
 # API title to appear in the user interface (Google Cloud Console).
